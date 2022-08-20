@@ -1,10 +1,10 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://tiagoflora.com"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "tflora"
 theme: hugo-profile
 
 Paginate: 3
-disqusShortname: gurusabarish
+# disqusShortname: gurusabarish
 googleAnalytics: G-DWJJVE27WD
 
 markup:
@@ -45,8 +45,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "tflora"
+  description: Tiago's personal website. Welcome! There is contact information, some projects, and a little bit more about me.
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
