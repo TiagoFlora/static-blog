@@ -3,10 +3,6 @@ languageCode: "en-us"
 title: "tflora"
 theme: hugo-profile
 
-Paginate: 3
-# disqusShortname: gurusabarish
-googleAnalytics: G-DWJJVE27WD
-
 markup:
   goldmark:
     renderer:
@@ -46,7 +42,7 @@ Menus:
 
 params:
   title: "tflora"
-  description: Tiago's personal website. Welcome! There is contact information, some projects, and a little bit more about me.
+  description: My personal website. Welcome! There is contact information, some projects, and a little bit more about me.
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -104,26 +100,26 @@ params:
     title: "Tiago"
     subtitle: "I do (mostly) data science"
     content: "And some random web dev."
-    image: /images/hero.svg
+    image: /images/profile-picture.jpg
     button:
       enable: true
       name: "Resume"
-      url: "#"
+      url: "https://drive.google.com/file/d/1mk1N3hPDBBrW_2j-_7z-N509JzCJvk9n/view?usp=sharing"
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/TiagoFlora
         - icon: fab fa-twitter
           url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+      # customIcons:
+        # - icon: /fav.png
+          # url: "https://example.com"
 
   # About
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/profile-picture.jpg"
     content: |-
       I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. 
 
@@ -137,7 +133,7 @@ params:
         - "JavaScript"
         - "React"
         - "Node"
-        - "Express"
+        - "PyTorch"
 
   # Experience
   experience:
