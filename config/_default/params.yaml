@@ -98,41 +98,35 @@ about:
 experience:
   enable: true
   items:
-    - job: "Sales Engineer"
-      company: "Eve Air Mobility"
+    - company: "Eve Air Mobility"
       companyUrl: "https://eveairmobility.com/"
-      date: "Jun 2022 - present"
-      featuredLink:
-        enable: true
-        name: "View the project"
-        url: "https://example.com"
-      content: "I am currently working as a sales engineer in the San Francisco Bay Area. I make technical presentations and serve as a bridge between engineering and business development"
+      jobs:
+        job: 
+          title: "Market Research Analyst"
+          date: "May 2021 - May 2022"
+          content: "As a market research analyst, I developed foundational data science work at Eve with the market research team. We work primarily with geospatial analysis, but have
+          worked with regression analysis, study design, and NLP models for entity recognition and ecosystem evaluation."
+        job:
+          title: "Sales Engineer"
+          date: "Jun 2022 - present"
+          content: "I am currently working as a sales engineer in the San Francisco Bay Area. I make technical presentations and serve as a bridge between engineering and business development."
+        # featuredLink:
+        #   enable: true
+        #   name: "View the project"
+        #   url: "https://example.com"
 
-    - job: "Curriculum Developer"
-      company: "Minerva University"
-      companyUrl: "https://example.com"
-      date: "May 2020 - May 2022"
-      featuredLink:
-        enable: true
-        # url: "https://example.com"
-      info:
-        enable: true
-        content: I worked as a software developer for more than one year in Amazon.
-      content: |
-        I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-    - job: "UI/UX Designer"
-      company: "Netflix"
-      companyUrl: "https://example.com"
-      date: "June 2017 - Nov 2019"
-      featuredLink:
-        enable: true
-        url: "https://example.com"
-      content: |
-        I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-        - Lead backend developer for a product.
-        - Created a frontend design for a product.
+    - company: "Minerva University"
+      companyUrl: "https://www.minerva.edu/"
+      jobs:
+        job:
+          title: "Curriculum Developer"
+          date: "May 2020 - May 2022"
+          featuredLink:
+            enable: false
+          # url: "https://example.com"
+          info:
+            enable: false
+          content: "I helped develop Minerva University's unique Formal Analyses curriculum, writing new resources on computer science, statistics, and decision theory." 
 
 # Education
 education:
@@ -145,6 +139,9 @@ education:
         url: "https://minerva.edu"
       date: "2018 - 2022"
       GPA: "3.80/4.00"
+      featuredLink:
+        enable: true
+        url: "https://www.minerva.edu/blog/conversation-minerva-student-tiago/"
       content: |-
         Extracurricular Activities
           - Debate club @ Hanyang University, Seoul
@@ -153,6 +150,7 @@ education:
       school:
         name: "Colégio Etapa"
         url: "https://www.etapa.com.br/en"
+      date: "2015-2017"
       GPA: "8.9 out of 10.0"
       featuredLink:
         enable: true

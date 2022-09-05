@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-auto h-100">
                         {{ if .Site.Params.hero.button.enable }}
-                        <a href="{{ .Site.Params.hero.button.url }}" class="btn">
+                        <a class="btn" onclick=" window.open('{{ .Site.Params.hero.button.url }}', '_blank')">
                             {{ .Site.Params.hero.button.name }}
                         </a>
                         {{ end }}

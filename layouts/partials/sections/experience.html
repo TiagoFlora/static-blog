@@ -49,10 +49,14 @@
                             id='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}'
                             aria-labelledby='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}-tab'
                         >
+                            {{ with .jobs }}
+                            <ul>
+                            {{ range . }}
+                            <li>
                             <div>
-                                <span class="h4">{{ .job }}</span>
+                                <span class="h4">{{ .title }}</span>
                                 <small>-</small>
-                                <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
+                                <a href="{{ $element.companyUrl }}" target="_blank">{{ $element.company }}</a>
                                 <div class="pb-1">
                                     <small>{{ .date }}</small>
                                     {{ if .info.enable | default true }}
@@ -61,7 +65,7 @@
                                             style="cursor: pointer;" 
                                             data-bs-toggle="tooltip" 
                                             data-bs-placement="top" 
-                                            data-bs-original-title={{ .info.content | default (print "Working as a " .job " at " .company ) }}
+                                            data-bs-original-title={{ .content | default (print "Working as a " .title " at " $element.company ) }}
                                         >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -76,9 +80,12 @@
                                     </a>
                                 </div>
                                 {{ end }}
-                            </div>
-
                             {{ .content | markdownify}}
+                            </div>
+                            </li>
+                            {{ end }}
+                            </ul>
+                        {{ end }}
                         </div>
                         {{ else }}
                         <div 
@@ -87,10 +94,14 @@
                             id='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}'
                             aria-labelledby='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}-tab'
                         >
+                            {{ with .jobs }}
+                            <ul>
+                            {{range .}}
+                            <li>
                             <div>
-                                <span class="h4">{{ .job }}</span>
+                                <span class="h4">{{ .title }}</span>
                                 <small>-</small>
-                                <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
+                                <a href="{{ $element.companyUrl }}" target="_blank">{{ $element.company }}</a>
                                 
                                 <div class="pb-1">
                                     <small>{{ .date }}</small>
@@ -100,7 +111,7 @@
                                             style="cursor: pointer;" 
                                             data-bs-toggle="tooltip" 
                                             data-bs-placement="top" 
-                                            data-bs-original-title={{ .info.content | default (print "Worked as a " .job " at " .company ) }}
+                                            data-bs-original-title={{ .content | default (print "Worked as a " .title " at " $element.company ) }}
                                         > 
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -115,11 +126,12 @@
                                     </a>
                                 </div>
                                 {{ end }}
-                            </div>
-
-                            <div class="pt-2">
                                 {{ .content | markdownify}}
                             </div>
+                            </li>
+                            {{ end }}
+                            </ul>
+                            {{ end }}
                         </div>
                         {{ end }}
                         {{ end }}
